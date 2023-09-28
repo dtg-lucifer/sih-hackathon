@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+	<script src="https://kit.fontawesome.com/bf33c26d23.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../styles/mapping.css">
+	<title>Mapping</title>
+</head>
+
+<body>
+	<main class="main__wrapper">
+		<section class="info__wrapper">
+			<div class="input__wrapper">
+				<input type="text" placeholder="Search for a location" class="input__search">
+				<button class="btn__search"><i class="fas fa-search"></i></button>
+			</div>
+			<div class="back__btn__container display__none"><span><i class="fa-solid fa-arrow-left"></i> Go back</span>
+			</div>
+			<div class="details__container display__none"></div>
+			<div class="sites__wrapper">
+				<div class="site__icon" data-icon="DK">
+					<img class="card" src="../assets/D1.jpg" alt="">
+					<span class="place__name">
+						<h3>Dakshineswar</h3>
+					</span>
+				</div>
+				<div class="site__icon" data-icon="AP">
+					<img class="card" src="../assets/AP1.jpg" alt="">
+					<span class="place__name">
+						<h3>Adyapeath</h3>
+					</span>
+				</div>
+				<div class="site__icon" data-icon="BM">
+					<img class="card" src="../assets/B1.jpg" alt="">
+					<span class="place__name">
+						<h3>Belur Math</h3>
+					</span>
+				</div>
+			</div>
+		</section>
+		<aside class="map__wrapper">
+			<div id="map"></div>
+		</aside>
+	</main>
+	<footer class="footer__wrapper">
+
+	</footer>
+</body>
+<script src="../lib/mapping.js"></script>
+</html>

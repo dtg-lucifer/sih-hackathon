@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Log In & Register Form</title>
+    <link rel = "stylesheet" href="../styles/style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        </div>
+        <nav class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="services.html" class="nav-link">SERVICES</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h2><i class='bx bxl-firebase'></i>HEADINGS</h2>
+
+            <div class="text-sci">
+                <h2 class="logo">Welcome! <br><span>To our page</span></h2>
+                <p>Gives the best services according to your requirements and guides you in the best way possible</P>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-gmail' ></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2 style="color: azure;">Sign In</h2>
+
+                    <div class="input-Box">
+                        <span class="icon"><i class='bx bxl-gmail'></i></span>
+                        <input type="email" required>
+                        <label style="color: azure;">E-Mail</label>
+                    </div>
+
+                    <div class="input-Box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label style="color: azure;">Password</label>
+                    </div>
+
+                    <div class="remember-forget">
+                        <label>
+                            <input type="checkbox">Remember me</label>
+                            <a href="#">Forgot Password</a>
+                    </div>
+
+                    
+                    <button  onclick="document.location='home.html'" class="button">Sign In</button>
+
+                    <div class="login-Register">
+                        <p>Don't have an account <a href="#" class="Register-Link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <form action="#">
+                    <h2 style="color: azure;">Sign Up</h2>
+
+                    <div class="input-Box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label style="color: azure;">Name</label>
+                    </div>
+
+                    <div class="input-Box">
+                        <span class="icon"><i class='bx bxl-gmail'></i></span>
+                        <input type="email" required>
+                        <label style="color: azure;">E-Mail</label>
+                    </div>
+
+                    <div class="input-Box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label style="color: azure;">Password</label>
+                    </div>
+
+                    <div class="remember-forget">
+                        <label>
+                            <input type="checkbox">I agree to tearms & conditions</label>
+                    </div>
+
+                    <button type="submit" class="btn">Sign Up</button>
+
+                    <div class="login-Register">
+                        <p>Already have an account <a href="#" class="login-Link">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="../lib/script-1.js"></script>
+</body>
+</html>
