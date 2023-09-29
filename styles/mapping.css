@@ -100,6 +100,7 @@ body main.main__wrapper>section.info__wrapper>div.sites__wrapper>div.site__icon>
 	object-fit: cover;
 	height: 10rem;
 	border-radius: 50%;
+	pointer-events: none;
 }
 
 
